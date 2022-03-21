@@ -1,10 +1,12 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div>
+    <el-menu :router="true" mode="horizontal" default-active="/">
+      <el-menu-item index="/">Home</el-menu-item>
+      <el-menu-item index="/about">About</el-menu-item>
+      <el-menu-item index="/vue">Vue</el-menu-item>
+    </el-menu>
+    <router-view></router-view>
+    <div id="vue"></div>
   </div>
 </template>
 
